@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="utf-8")
+    title GeoMsg
+    link(rel="stylesheet", type="text/css", href="/main.css")
+
+
+  body
+    div(style="position:absolute;z-index:5;width:100%;")
+        h2#titleName GeoMsg
+        h2#playerName= user.username
+        a.navbtn(href="/" class="btn btn-default" role="button" style="position:absolute;width:50px;height:25px;padding-left:0;") Logout
+
+
+        div#center-ctrls(style="position:absolute;top:0;left:50%;width:120px;margin-left:-60px;background:red;")
+            input#send-status(type="button" value="message off" style="width:120px;background:darkgrey;")
+            input#explore(type="button" value="discover off" style="width:120px;background:darkgrey;")
+
+    header
+        
+
+
+    block content
+
+    script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUaQQwfhiO-ZsQYZtgCZcm6L07w4di4JU")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src="/client.js")
